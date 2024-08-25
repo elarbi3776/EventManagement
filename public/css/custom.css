@@ -1,0 +1,122 @@
+.event-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-image {
+    flex: 0 0 80px; /* Ajustez la taille selon vos besoins */
+    margin-right: 20px;
+}
+
+.event-image img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.event-content {
+    flex: 1;
+}
+
+.event-content h6 {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.event-content h3 {
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.event-content h4 {
+    font-size: 16px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.event-content p {
+    margin-bottom: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.event-content .time-location {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.event-content .time-location span {
+    margin-right: 10px;
+}
+
+.event-content .by-author {
+    font-size: 14px;
+    color: #888;
+}
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-weight: bold;
+    color: #000; /* Couleur du texte des onglets non actifs */
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    color: #ff0000; /* Couleur du texte de l'onglet actif */
+    background-color: transparent; /* Fond transparent */
+    border: none; /* Supprime les bordures */
+    border-bottom: 2px solid #ff0000; /* Ligne rouge sous l'onglet actif */
+}
+
+.nav-tabs > li > a:hover {
+    background-color: transparent; /* Fond transparent au survol */
+    border: none; /* Supprime les bordures au survol */
+    border-bottom: 2px solid #ddd; /* Ligne grise sous l'onglet au survol */
+}
+.nav-tabs > li > a {
+    color: #000; /* Couleur du texte des onglets non actifs */
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    color: #ff0000; /* Couleur du texte de l'onglet actif */
+    border-bottom: 2px solid #ff0000; /* Ligne rouge sous l'onglet actif */
+}
+
+.nav-tabs > li > a:hover {
+    color: #ff0000; /* Couleur du texte au survol */
+    border-bottom: 2px solid #ddd; /* Ligne grise sous l'onglet au survol */
+}
+.center-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
