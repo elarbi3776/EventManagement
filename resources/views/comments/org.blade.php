@@ -36,15 +36,7 @@
                                             <span class="badge bg-secondary">{{ $comment->event->name }}</span>
                                         </div>
                                         <p class="mb-3">{{ $comment->content }}</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div>
-                                                <a href="#" class="btn btn-sm btn-outline-danger" onclick="event.preventDefault(); document.getElementById('delete-comment-{{ $comment->id }}').submit();">Remove</a>
-                                                <form id="delete-comment-{{ $comment->id }}" action="{{ route('admin.comments.destroy', $comment->id) }}" method="POST" class="d-none">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                </form>
-                                            </div>
-                                        </div>
+                                       
 
                                         @if($comment->responses->isNotEmpty())
                                             <div class="mt-4">
